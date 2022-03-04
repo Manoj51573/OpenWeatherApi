@@ -1,0 +1,127 @@
+
+<div>
+  <input type="text" (blur)="cityWeather($event)" placeholder="search city">
+</div>
+<div>
+  <b>{{weatherReport.city.name}}</b>
+
+</div>
+<div class="mainWidth">
+
+  <div *ngIf="flag" class="widget">
+    <div class="left-panel panel">
+      <div class="date">
+        {{ day1Name }}
+      </div>
+      <div class="date">
+        {{ day1MonthName }}
+      </div>
+      <div class="city">
+        {{ day1MinTemp }}&deg; &nbsp; {{ day1MaxTemp }}&deg;
+      </div>
+      <hr>
+      <div class="temp">
+        <img src="/assets/{{day1ImageIcon}}" height="50" alt="Clouds">
+      </div>
+      <div class="temp">
+        {{ day1Desc }}
+      </div>
+    </div>
+  </div>
+
+  <div *ngIf="flag" class="widget">
+    <div class="left-panel panel">
+      <div class="date">
+        {{ day2Name }}
+      </div>
+      <div class="date">
+        {{ day2MonthName }}
+      </div>
+      <div class="city">
+        {{ day2MinTemp }}&deg; &nbsp; {{ day2MaxTemp }}&deg;
+      </div>
+      <hr>
+      <div class="temp">
+        <img src="/assets/{{day2ImageIcon}}" height="50" alt="Clouds">
+      </div>
+      <div class="temp">
+        {{ day2Desc }}
+      </div>
+    </div>
+  </div>
+  <div *ngIf="flag" class="widget">
+    <div class="left-panel panel">
+      <div class="date">
+        {{ day3Name }}
+      </div>
+      <div class="date">
+        {{ day3MonthName }}
+      </div>
+      <div class="city">
+        {{ day3MinTemp }}&deg; &nbsp; {{ day3MaxTemp }}&deg;
+      </div>
+      <hr>
+      <div class="temp">
+        <img src="/assets/{{day3ImageIcon}}" height="50" alt="Clouds">
+      </div>
+      <div class="temp">
+        {{ day3Desc }}
+      </div>
+    </div>
+  </div>
+
+  <div *ngIf="flag" class="widget">
+    <div class="left-panel panel">
+      <div class="date">
+        {{ day4Name }}
+      </div>
+      <div class="date">
+        {{ day4MonthName }}
+      </div>
+      <div class="city">
+        {{ day4MinTemp }}&deg; &nbsp; {{ day4MaxTemp }}&deg;
+      </div>
+      <hr>
+      <div class="temp">
+        <img src="/assets/{{day4ImageIcon}}" height="50" alt="Clouds">
+      </div>
+      <div class="temp">
+        {{ day4Desc }}
+      </div>
+    </div>
+  </div>
+
+  <div *ngIf="flag" class="widget">
+    <div class="left-panel panel">
+      <div class="date">
+        {{ day5Name }}
+      </div>
+      <div class="date">
+        {{ day5MonthName }}
+      </div>
+      <div class="city">
+        {{ day5MinTemp }}&deg; &nbsp; {{ day5MaxTemp }}&deg;
+      </div>
+      <hr>
+      <div class="temp">
+        <img src="/assets/{{day5ImageIcon}}" height="50" alt="Clouds">
+      </div>
+      <div class="temp">
+        {{ day5Desc }}
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div>
+  <div class="element">
+    <button class="btn btn-primary" (click)="unitMeasure('Metric')">&#8451;</button>
+  </div>
+  <div class="element">
+    <button class="btn btn-primary" (click)="unitMeasure('Imperial')">&#8457;</button>
+  </div>
+</div>
+
+
+

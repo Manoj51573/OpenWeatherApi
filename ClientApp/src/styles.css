@@ -1,0 +1,95 @@
+/* You can add global styles to this file, and also import other style files */
+
+/* Provide sufficient contrast against white background */
+a {
+  color: #0366d6;
+}
+
+code {
+  color: #e01a76;
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: #1b6ec2;
+  border-color: #1861ac;
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+}
+
+.element {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+}
+input[type=text] {
+  border: 2px solid #aaa;
+  border-radius: 30px;
+  margin: 3px 0;
+  outline: none;
+  padding: 8px;
+  box-sizing: border-box;
+  transition: .3s;
+  height: 25px;
+}
+body {
+  font-family: 'Roboto', sans-serif;
+  overflow: hidden;
+  background: #0dcaf0;
+  
+}
+div.mainWidth {
+  width: 1000px;
+  display: flex;
+}
+
+div.widget {
+  position: relative;
+  /*width: 200px;*/
+  margin: 150px auto;
+  background-color: #fcfdfd;
+  border-radius: 20px;
+  padding: 25px;
+  padding-right: 30px;
+  box-shadow: 0px 31px 35px -26px #080c21;
+}
+
+div.left-panel {
+}
+
+div.date {
+  font-size: 14px;
+  font-weight: bold;
+  color: rgba(0,0,0,0.5);
+}
+
+div.city {
+  font-size: 21px;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding-top: 5px;
+  color: rgba(0,0,0,0.7);
+}
+
+div.temp {
+  font-size: 10px;
+  color: rgba(0,0,0,0.9);
+  font-weight: 100;
+}
+
+div.panel {
+  display: inline-block;
+}
+
+div.right-panel {
+  position: absolute;
+  float: right;
+  top: 0;
+  margin-top: 35px;
+  padding-left: 10px;
+}
