@@ -152,23 +152,26 @@ export class WeatherReportComponent implements OnInit {
     if (iconDesc == 'clear sky') {
       iconImage = "Weather-Sun-icon.png";
     }
-    if (iconDesc == 'moderate rain') {
+    else if (iconDesc == 'moderate rain') {
       iconImage = "Weather-Rain-icon.png";
     }
-    if (iconDesc == 'light rain') {
+    else if (iconDesc == 'light rain') {
       iconImage = "Partly-Cloudy-Rain-icon.png";
     }
-    if (iconDesc == 'broken clouds') {
+    else if (iconDesc == 'broken clouds') {
       iconImage = "Weather-Sun-icon.png";
     }
-    if (iconDesc == 'overcast clouds') {
+    else if (iconDesc == 'overcast clouds') {
       iconImage = "Weather-Clouds-icon.png";
     }
-    if (iconDesc == 'scattered clouds') {
+    else if (iconDesc == 'scattered clouds') {
       iconImage = "Partly-Cloudy-Day-icon.png";
     }
-    if (iconDesc == 'few clouds') {
+    else if (iconDesc == 'few clouds') {
       iconImage = "Weather-Clouds-icon.png";
+    }
+    else {
+      iconImage = "Weather-Sun-icon.png";
     }
     return iconImage;
  }

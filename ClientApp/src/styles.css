@@ -25,7 +25,7 @@ code {
 .element {
   display: inline-block;
   width: 50px;
-  height: 50px;
+  /*height: 50px;*/
 }
 input[type=text] {
   border: 2px solid #aaa;
@@ -44,7 +44,7 @@ body {
   
 }
 div.mainWidth {
-  width: 1000px;
+  width: 900px;
   display: flex;
 }
 
@@ -57,22 +57,27 @@ div.widget {
   padding: 25px;
   padding-right: 30px;
   box-shadow: 0px 31px 35px -26px #080c21;
+  height:193px;
 }
 
+.height-image{
+    height:30px
+}
 div.left-panel {
 }
 
 div.date {
-  font-size: 14px;
-  font-weight: bold;
-  color: rgba(0,0,0,0.5);
+  font-size: 12px;
+    font-weight: bold;
+      color: rgba(0,0,0,0.7);
+  text-align: center;
 }
 
 div.city {
   font-size: 21px;
   font-weight: bold;
   text-transform: uppercase;
-  padding-top: 5px;
+
   color: rgba(0,0,0,0.7);
 }
 
@@ -80,6 +85,7 @@ div.temp {
   font-size: 10px;
   color: rgba(0,0,0,0.9);
   font-weight: 100;
+  text-align: center;
 }
 
 div.panel {
