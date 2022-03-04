@@ -14,7 +14,11 @@ code {
   background-color: #1b6ec2;
   border-color: #1861ac;
 }
-
+div.btn-primary-width {
+  width: 67%;
+  text-align:right;
+  padding:10px;
+}
 
 * {
   margin: 0;
@@ -35,7 +39,8 @@ input[type=text] {
   padding: 8px;
   box-sizing: border-box;
   transition: .3s;
-  height: 25px;
+  height: 30px;
+  text-align: center;
 }
 body {
   font-family: 'Roboto', sans-serif;
@@ -44,22 +49,27 @@ body {
   
 }
 div.mainWidth {
-  width: 900px;
+  width: 100%;
   display: flex;
 }
 
 div.widget {
   position: relative;
   /*width: 200px;*/
-  margin: 150px auto;
+  /*width: 20%;*/
+  margin: 10px;
   background-color: #fcfdfd;
   border-radius: 20px;
   padding: 25px;
   padding-right: 30px;
   box-shadow: 0px 31px 35px -26px #080c21;
-  height:193px;
+  height: 193px;
 }
-
+.city-text {
+  padding: 20px;
+  font-size: 20px;
+  font-weight: bold;
+}
 .height-image{
     height:30px
 }
@@ -98,4 +108,27 @@ div.right-panel {
   top: 0;
   margin-top: 35px;
   padding-left: 10px;
+}
+
+
+@media only screen and (max-width: 768px) {
+
+  div.widget {
+    position: relative;
+    /* width: 200px; */
+    width: 40%;
+    margin: 15px auto;
+    background-color: #fcfdfd;
+    border-radius: 20px;
+    padding: 25px;
+    padding-right: 30px;
+    box-shadow: 0px 31px 35px -26px #080c21;
+    height: 193px;
+  }
+  div.mainWidth {
+    width: 100%;
+    display: block;
+    overflow: scroll;
+    height:500px
+  }
 }
