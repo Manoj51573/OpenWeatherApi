@@ -12,7 +12,7 @@ export class WeatherReportComponent implements OnInit {
   weatherReport
   public flag = false;
   public unit = "imperial";
-  public cityName = "Perth";
+  public cityName = "Delhi";
   public dayName = "";
   public monthName = "";
   public imageType = "";
@@ -83,6 +83,7 @@ export class WeatherReportComponent implements OnInit {
   }
 
   public getWeatherDetailData(weatherReport:any) {
+    this.cityName = weatherReport.city.name;
     for (var i = 0; i < weatherReport.list.length; i++) {
       switch (i) {
         case 0:
