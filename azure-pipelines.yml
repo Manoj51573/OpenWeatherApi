@@ -14,6 +14,13 @@ variables:
   buildPlatform: 'Any CPU'
   buildConfiguration: 'Release'
 
+
+steps:
+- task: UseDotNet@2
+  displayName: 'Use .NET Core 6 sdk'
+  inputs:
+    version: '6.0.x'
+    
 steps:
 - task: NuGetToolInstaller@1
 
