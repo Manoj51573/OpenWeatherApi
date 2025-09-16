@@ -1,1 +1,3 @@
 A Weather API application built with .NET typically fetches real-time weather data from a third-party API (like OpenWeatherMap, WeatherAPI, or AccuWeather) and displays it in a user-friendly format. It can be a console app, web app (ASP.NET Core), or even a mobile app using Xamarin or MAUI.
+
+More content has to be added here-
